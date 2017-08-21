@@ -25,7 +25,7 @@ const plugins = [
     {
       helpers: false,
       polyfill: false,
-      regenerator: true,
+      regenerator: false
     },
   ],
 ];
@@ -39,7 +39,7 @@ const plugins = [
 var env = process.env.BABEL_ENV || process.env.NODE_ENV;
 if (env !== 'development' && env !== 'test' && env !== 'production') {
   throw new Error(
-    'Using `babel-preset-react-app` requires that you specify `NODE_ENV` or ' +
+    'Using `babel-preset-pytkin-react` requires that you specify `NODE_ENV` or ' +
       '`BABEL_ENV` environment variables. Valid values are "development", ' +
       '"test", and "production". Instead, received: ' +
       JSON.stringify(env) +
@@ -106,13 +106,20 @@ if (env === 'test') {
       require.resolve('babel-preset-react'),
     ],
     plugins: plugins.concat([
-      // function* () { yield 42; yield 43; }
+      // async/await support
       [
-        require.resolve('babel-plugin-transform-regenerator'),
+        require.resolve('fast-async'),
         {
-          // Async functions are converted to generators by babel-preset-env
-          async: false,
-        },
+          env: {
+            log: false
+          },
+          compiler: {
+            promises: true,
+            generators: false
+          },
+          runtimePattern: null,
+          useRuntimeModule: false
+        }
       ],
       // Adds syntax support for import()
       require.resolve('babel-plugin-syntax-dynamic-import'),
