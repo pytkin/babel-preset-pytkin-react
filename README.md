@@ -1,6 +1,6 @@
 # babel-preset-pytkin-react
 
-This preset based on [babel-preset-react-app](https://github.com/facebookincubator/create-react-app/tree/master/packages/babel-preset-react-app)(v3.0.2)
+This preset based on [babel-preset-react-app](https://github.com/facebookincubator/create-react-app/tree/master/packages/babel-preset-react-app) (v3.0.2)
 
 ## Usage
 
