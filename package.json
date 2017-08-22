@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-pytkin-react",
-  "version": "0.1.0",
+  "version": "0.9.0",
   "repository": "pytkin/babel-preset-pytkin-react",
   "bugs": {
     "url": "https://github.com/pytkin/babel-preset-pytkin-react/issues"
