@@ -90,8 +90,7 @@ if (env === 'test') {
         require.resolve('babel-preset-env'),
         {
           targets: {
-            // React parses on ie 9, so we should too
-            ie: 9,
+            ie: 10,
             // We currently minify with uglify
             // Remove after https://github.com/mishoo/UglifyJS2/issues/448
             uglify: true,
