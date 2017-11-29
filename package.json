@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-pytkin-react",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "repository": "pytkin/babel-preset-pytkin-react",
   "bugs": {
     "url": "https://github.com/pytkin/babel-preset-pytkin-react/issues"
@@ -9,17 +9,17 @@
     "index.js"
   ],
   "dependencies": {
-    "babel-plugin-dynamic-import-node": "1.0.2",
+    "babel-plugin-dynamic-import-node": "1.1.0",
     "babel-plugin-syntax-dynamic-import": "6.18.0",
     "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-plugin-transform-object-rest-spread": "6.23.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-plugin-transform-react-constant-elements": "6.23.0",
     "babel-plugin-transform-react-jsx": "6.24.1",
     "babel-plugin-transform-react-jsx-self": "6.22.0",
     "babel-plugin-transform-react-jsx-source": "6.22.0",
-    "fast-async": "6.2.1",
+    "fast-async": "6.3.0",
     "babel-plugin-transform-runtime": "6.23.0",
-    "babel-preset-env": "1.5.2",
+    "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1"
   },
   "peerDependencies": {
